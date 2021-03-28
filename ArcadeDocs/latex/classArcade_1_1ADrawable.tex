@@ -1,0 +1,153 @@
+\hypertarget{classArcade_1_1ADrawable}{}\doxysection{Arcade\+::A\+Drawable Class Reference}
+\label{classArcade_1_1ADrawable}\index{Arcade::ADrawable@{Arcade::ADrawable}}
+
+
+A base class for every objects in the game.  
+
+
+
+
+{\ttfamily \#include $<$A\+Drawable.\+hpp$>$}
+
+
+
+Inheritance diagram for Arcade\+::A\+Drawable\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classArcade_1_1ADrawable__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Arcade\+::A\+Drawable\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classArcade_1_1ADrawable__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classArcade_1_1ADrawable_a9fb39cc289f2db7114cd773e323eea82}{$\sim$\+A\+Drawable}} ()=default
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classArcade_1_1ADrawable}{A\+Drawable}} \& \mbox{\hyperlink{classArcade_1_1ADrawable_a90161768cf502aa6984b16d7380cc988}{operator=}} (const \mbox{\hyperlink{classArcade_1_1ADrawable}{A\+Drawable}} \&)=default
+\begin{DoxyCompactList}\small\item\em Default assignement operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classArcade_1_1ADrawable_a89d90829853742093407778f50cf1aa6}{x}}
+\begin{DoxyCompactList}\small\item\em Get the X position of this object @info A percentage representing the position. 0 is left, 100 right. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classArcade_1_1ADrawable_a18211c3caa5cde1c5af7405a477f78f8}{y}}
+\begin{DoxyCompactList}\small\item\em Get the Y position of this object @info A percentage representing the position. 0 is top, 100 bottom. \end{DoxyCompactList}\item 
+unsigned \mbox{\hyperlink{classArcade_1_1ADrawable_a5f58a4ea8f62fb46f654f9aaa78ae585}{color}}
+\begin{DoxyCompactList}\small\item\em The color of this object. @info color format is R\+R\+G\+G\+B\+B\+AA, 1 byte for each. \end{DoxyCompactList}\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classArcade_1_1ADrawable}{A\+Drawable}} $>$ \mbox{\hyperlink{classArcade_1_1ADrawable_a09cb8d116e36cebc61ed138290f0e493}{fallback}}
+\begin{DoxyCompactList}\small\item\em Drawable to use if the renderer can\textquotesingle{}t display the current object (can be nullptr). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classArcade_1_1ADrawable_a7974c043813ead47c6a20e2952a5e753}{A\+Drawable}} ()=default
+\begin{DoxyCompactList}\small\item\em Default constructor (protected because the class is abstract) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classArcade_1_1ADrawable_acedd64d0daddeda46e6ec02680943679}{A\+Drawable}} (const \mbox{\hyperlink{classArcade_1_1ADrawable}{A\+Drawable}} \&)=default
+\begin{DoxyCompactList}\small\item\em Default copy constructor (protected because the class is abstract) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A base class for every objects in the game. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classArcade_1_1ADrawable_a9fb39cc289f2db7114cd773e323eea82}\label{classArcade_1_1ADrawable_a9fb39cc289f2db7114cd773e323eea82}} 
+\index{Arcade::ADrawable@{Arcade::ADrawable}!````~ADrawable@{$\sim$ADrawable}}
+\index{````~ADrawable@{$\sim$ADrawable}!Arcade::ADrawable@{Arcade::ADrawable}}
+\doxysubsubsection{\texorpdfstring{$\sim$ADrawable()}{~ADrawable()}}
+{\footnotesize\ttfamily virtual Arcade\+::\+A\+Drawable\+::$\sim$\+A\+Drawable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Default destructor. 
+
+\mbox{\Hypertarget{classArcade_1_1ADrawable_a7974c043813ead47c6a20e2952a5e753}\label{classArcade_1_1ADrawable_a7974c043813ead47c6a20e2952a5e753}} 
+\index{Arcade::ADrawable@{Arcade::ADrawable}!ADrawable@{ADrawable}}
+\index{ADrawable@{ADrawable}!Arcade::ADrawable@{Arcade::ADrawable}}
+\doxysubsubsection{\texorpdfstring{ADrawable()}{ADrawable()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Arcade\+::\+A\+Drawable\+::\+A\+Drawable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [default]}}
+
+
+
+Default constructor (protected because the class is abstract) 
+
+\mbox{\Hypertarget{classArcade_1_1ADrawable_acedd64d0daddeda46e6ec02680943679}\label{classArcade_1_1ADrawable_acedd64d0daddeda46e6ec02680943679}} 
+\index{Arcade::ADrawable@{Arcade::ADrawable}!ADrawable@{ADrawable}}
+\index{ADrawable@{ADrawable}!Arcade::ADrawable@{Arcade::ADrawable}}
+\doxysubsubsection{\texorpdfstring{ADrawable()}{ADrawable()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Arcade\+::\+A\+Drawable\+::\+A\+Drawable (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classArcade_1_1ADrawable}{A\+Drawable}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [default]}}
+
+
+
+Default copy constructor (protected because the class is abstract) 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classArcade_1_1ADrawable_a90161768cf502aa6984b16d7380cc988}\label{classArcade_1_1ADrawable_a90161768cf502aa6984b16d7380cc988}} 
+\index{Arcade::ADrawable@{Arcade::ADrawable}!operator=@{operator=}}
+\index{operator=@{operator=}!Arcade::ADrawable@{Arcade::ADrawable}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classArcade_1_1ADrawable}{A\+Drawable}}\& Arcade\+::\+A\+Drawable\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classArcade_1_1ADrawable}{A\+Drawable}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Default assignement operator. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classArcade_1_1ADrawable_a5f58a4ea8f62fb46f654f9aaa78ae585}\label{classArcade_1_1ADrawable_a5f58a4ea8f62fb46f654f9aaa78ae585}} 
+\index{Arcade::ADrawable@{Arcade::ADrawable}!color@{color}}
+\index{color@{color}!Arcade::ADrawable@{Arcade::ADrawable}}
+\doxysubsubsection{\texorpdfstring{color}{color}}
+{\footnotesize\ttfamily unsigned Arcade\+::\+A\+Drawable\+::color}
+
+
+
+The color of this object. @info color format is R\+R\+G\+G\+B\+B\+AA, 1 byte for each. 
+
+\mbox{\Hypertarget{classArcade_1_1ADrawable_a09cb8d116e36cebc61ed138290f0e493}\label{classArcade_1_1ADrawable_a09cb8d116e36cebc61ed138290f0e493}} 
+\index{Arcade::ADrawable@{Arcade::ADrawable}!fallback@{fallback}}
+\index{fallback@{fallback}!Arcade::ADrawable@{Arcade::ADrawable}}
+\doxysubsubsection{\texorpdfstring{fallback}{fallback}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classArcade_1_1ADrawable}{A\+Drawable}}$>$ Arcade\+::\+A\+Drawable\+::fallback}
+
+
+
+Drawable to use if the renderer can\textquotesingle{}t display the current object (can be nullptr). 
+
+\mbox{\Hypertarget{classArcade_1_1ADrawable_a89d90829853742093407778f50cf1aa6}\label{classArcade_1_1ADrawable_a89d90829853742093407778f50cf1aa6}} 
+\index{Arcade::ADrawable@{Arcade::ADrawable}!x@{x}}
+\index{x@{x}!Arcade::ADrawable@{Arcade::ADrawable}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily int Arcade\+::\+A\+Drawable\+::x}
+
+
+
+Get the X position of this object @info A percentage representing the position. 0 is left, 100 right. 
+
+\mbox{\Hypertarget{classArcade_1_1ADrawable_a18211c3caa5cde1c5af7405a477f78f8}\label{classArcade_1_1ADrawable_a18211c3caa5cde1c5af7405a477f78f8}} 
+\index{Arcade::ADrawable@{Arcade::ADrawable}!y@{y}}
+\index{y@{y}!Arcade::ADrawable@{Arcade::ADrawable}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily int Arcade\+::\+A\+Drawable\+::y}
+
+
+
+Get the Y position of this object @info A percentage representing the position. 0 is top, 100 bottom. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+sources/\+Common/\+Drawables/\mbox{\hyperlink{ADrawable_8hpp}{A\+Drawable.\+hpp}}\end{DoxyCompactItemize}
